@@ -1,0 +1,133 @@
+Reviewer #1: SUMMARY:
+
+The paper focuses on a variant of inverse reinforcement learning that doesn't assume full execution traces to be available. Specifically, it only assumes the availability of summarized execution traces, and presents methods for recovering the posterior distribution over reward function parameter values given these trace summaries. The techniques are fairly straightforward applications of existing Monte Carlo sampling-based and Bayesian methods for estimating sums over large sets. Nonetheless, there are a few issues that needed to be overcome when applying these methods to this IRL setting, and the paper's contribution overall is sufficient for publication in the journal.
+
+
+
+CONTRIBUTIONS: WHAT IS (ARE) THE CLAIMED CONTRIBUTION(S) OF THE PAPER? HOW SIGNIFICANT/IMPORTANT IS (ARE) THE CLAIMED CONTRIBUTION(S)?
+
+The contribution is methods for recovering the posterior distribution over reward function parameter values given execution trace summaries in the aforementioned IRL settings. They are significant enough for publication, as described above.
+
+
+
+SUPPORT: HOW ARE THESE CONTRIBUTIONS SUPPORTED?  IS THE SUPPORT ADEQUATE?  CORRECT?  IS THE EVALUATION ADEQUATE?  WELL-DESIGNED? COMMENT ON THE SUPPORT FOR EACH CLAIMED CONTRIBUTION AND, IF APPROPRIATE, ON HOW THE SUPPORT COULD BE IMPROVED.
+
+The proposed algorithms are evaluated on several problems; a few small synthetic grid-world settings in order to compare the scalability of the proposed approaches to the exact inference algorithms, and a scenario from a cognitive science study. 
+
+
+
+TECHNICAL QUALITY: IS THE PAPER TECHNICALLY SOUND?  DOES IT ADEQUATELY ADDRESS THE LIMITATIONS OF THE RESULTS?  COMMENT ON HOW TECHNICAL QUALITY COULD BE IMPROVED.  ARE THE  STRENGTHS/WEAKNESSES AND REASONS FOR OBSERVED RESULTS EXPLORED SYSTEMATICALLY?
+
+The paper looks technically sound.
+
+
+
+ORIGINALITY: ARE THE CLAIMED CONTRIBUTIONS NOVEL?  DOES THE PAPER PLACE THE WORK APPROPRIATELY IN THE CONTEXT OF RELATED RESEARCH?
+
+The techniques the paper uses are known in the literature, which the paper duly acknowledges. However, applying them in the IRL setting requires overcoming a few issues. So, the paper's originality is somewhat limited, but its contributions are still worth publishing.
+
+
+
+CLARITY: COMMENT ON THE WRITING, ORGANIZATION & EXPOSITION.  IS TECHNICAL MATERIAL (ALGORITHMS, EVALUATION METHODOLOGY, ETC.) DESCRIBED IN SUFFICIENT DETAIL?  COULD A READER REPLICATE THE WORK? ARE THE TITLE AND ABSTRACT APPROPRIATE?  ARE THE FIGURES/TABLES SUFFICIENT?
+
+The amount of detail is sufficient, but using these algorithms requires some problem-specific steps such as choosing a problem-specific discrepancy function in the case of ABC. The techniques' performance depends on these choices, but this is a common issue among ML approaches.
+
+
+
+DETAILED COMMENTS: 
+
+
+The paper is very clear, and I didn't notice any technical issues. In terms of writing, the only very minor glitches I have noticed are 
+
+- The repeated use of "a MDP", which I would recommend replacing with "an MDP", since it starts with "ehM".
+
+- "Although this change is generally inefficient..." -> I didn't understand what this sentence means by saying that the change is inefficient. 
+
+- "research in modelling of strategic behavior" -> "research in modelling strategic behavior"
+
+Also, the paper makes the following claim: "However, in general it should be possible to infer $\sigma$ if sufficient training data is available". Wouldn't you need full state observations as part of this data to infer this? And if you have full state observations, why not use standard IRL instead of trying to infer $\sigma$?
+
+
+
+REQUIRED CHANGES: DISTINGUISH BETWEEN MINOR AND MAJOR CHANGES THAT NEED TO BE MADE FOR THE PAPER TO BE ACCEPTABLE.
+
+As far as I'm concerned, the only changes that need to be done are those in the DETAILED COMMENTS section, all of which are minor. I don't think another round of reviews is necessary for that.
+
+
+
+
+
+
+
+
+
+
+
+Reviewer #2: Summary:
+This paper is about inverse reinforcement learning, where the key idea is to build reinforcement learning models for behavioural data. The authors propose two approximations for attacking the problem: a Monte-Carlo estimate and a Bayesian computation approach. Moreover, they employ a recent RL model from cognitive science and demonstrate that a sensible approximate posterior can be inferred based only on the task completion times collected from user experiments.
+
+
+Strong points:
+
+
+Weak points and suggestions for improvement:
+
+A. While the authors refer to several real-world examples of the applicability of inverse reinforcement learning, such as helicopter acrobatics, pedestrian activity prediction, dialogue systems, they simple list them without providing a clear and more elaborate motivation of their actual applicability. Hence, it would be great to improve the Introduction section by first providing an extensive motivation with clear practical examples of the aforementioned areas, and then present the problem statement. At this point the paper begins very abruptly without setting a clear ground of the practical use of the problem at hand. For example, the text between lines 12 and 21 of the second page could be moved higher and in a more elaborate way.
+
+B. Since in Section 5.2 you are reporting runtimes, it would be useful to state clearly the hardware and software you have used. Otherwise these runtimes are meaningless.
+
+C. Some of the details in the Appendix could actually have been included in the main paper. For example, I would move up to the main experimental section (Section 5) at least the following appendix sections: A1.1., A1.2, A1.3, and perhaps A2.2.
+
+In summary: this is a very nice and interesting paper. By addressing the five minor comments above it can make a nice addition to the Special issue of ECML/PKDD.
+
+
+
+
+
+
+
+Reviewer #3: The paper consider inverse reinforcement learning for the case of partially observed trajectories (state-action paths) only. More precisely, the paper considers the case where
+the external observer has partial observability at the path level in the sense that the
+external observer only gets summaries of the the true paths. 
+
+Inverse RL is an important ML problem, and indeed most approaches assume that
+behaviour is completely observed. However, as an informed outsider such as the reviewer, 
+the statement "partial information" needs to be better qualified, in particular in the
+light of 
+
+Jaedeug Choi, Kee-Eung Kim:
+Inverse Reinforcement Learning in Partially Observable Environments. 
+Journal of Machine Learning Research 12: 691-730 (2011)
+
+While the behaviour is definitely not fully observed, partial observations within RL 
+and MDPs typically required to hidden states. Hidden states, however, are more general 
+than assuming that there is a summary function \sigma. The work listed above indeed
+considered POMDPs and in turn covers the notation of partially observability better. 
+To be fair, the authors discuss the paper (and follow up papers), however, they do not
+justify the title of the paper. I would rather like to see a title a long the lines
+"Inverse Reinforcement Learning from Summary Data" This seems to be a better fitting
+title and also picks up they way the authors call it in the summary part of the 
+introduction. Indeed, Choi and Kim consider noise free observations, still, 
+please clarify this. Maybe I am wrong. 
+
+Now, let me turn towards the actual content. Overall, the paper is really well written 
+and structured. I very much enjoyed reading the motivating example in Section 3.2.
+Here, the authors may want to link the work to recent approach on advice-taking 
+learning, which was also applied to IL (see the work by Sriraam Natarajan) as 
+well as to co-active learning and critiquing (see the work by Andrea Passereni).
+At least, this should provide very interesting avenues for future work, as they solve
+similar in spirit problems. Also, the paper covers related work well, as far 
+as an informed outsider can say. The MC and ABC based approximate inference approaches 
+are also derived well from first principle, although they are kind of straightforward, 
+also the use of GPs as surrogates for the expensive likelihoods, this is fine, as the
+setting considered is interesting an important. Most interestingly, the paper presents 
+an interesting cognitive modeling application. While additional experiments would
+have been fine, the grid world is really just showing that the method proposed works, 
+the cognitive modelling application is really interesting. The only downside is that
+all experiments present within model comparisons only. The authors argue that
+this is because existing work do not really match the considered setting. This is fine, 
+although it would be great if the authors could present even the failure of 
+existing approaches. 
+
+Nevertheless, overall the paper makes a solid contribution. Except for the "title" discussion, this should be accepted, at least from the perspective of an informed 
+outsider.
