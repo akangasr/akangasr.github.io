@@ -1,0 +1,60 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 4
+TITLE: Inference of Strategic Behavior based on Incomplete Observation Data
+AUTHORS: Antti Kangasrääsiö and Samuel Kaski
+
+Overall evaluation: 0 (borderline paper)
+
+----------- Overall evaluation -----------
+This paper extends existing inverse reinforcement learning approaches, which aim to infer the rewards of a task given observations from an optimal policy, by the ability to learn from indirect observations.
+The basic assumption is that trajectories cannot be observed but only a summary statistic. The approach nicely demonstrates that inferring problem parameters (which specify rewards) is still possible both in a basic simulated grid world task as well as in a computer user task.
+
+I very much enjoy the demonstration of the approach for inferring computer user models. At first the usefulness of this setting was not clear to me but this example nicely shows that there are applications.
+My enthusiasm is damped by two things though:
+(1) The assumption of knowing the summary function can be quite limiting and I wonder whether this can be relaxed.
+(2) The actual approach is straight-forward combination of standard techniques and by itself does not yield new insights.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 4
+TITLE: Inference of Strategic Behavior based on Incomplete Observation Data
+AUTHORS: Antti Kangasrääsiö and Samuel Kaski
+
+Overall evaluation: -1 (weak reject)
+
+----------- Overall evaluation -----------
+In the inverse reinforcement learning problem, the analyst attempts to infer the reward signal that an agent is optimizing by observing optimal behavior by the agent.  The authors introduce the inverse reinforcement learning from summary data (IRL-SD) problem, in which the analyst only has access to "summaries" of the paths taken by the agent.  They describe the exact likelihood for solving the inference problem, plus two approximation algorithms; all three perform equally well in settings in which exact inference is feasible; the two approximations perform equally well as each other in the other test settings considered by the authors.
+
+The algorithms are evaluated in two experimental settings: inferring the "softness" of "soft walls" in a gridworld setting, and inferring fixation time, duration of mouse movements, and probability of recalling the entire menu in a model of computer users.
+
+Both of these settings appear to be exercises in understanding the state transition function rather than the reward function, which makes it hard to fit this into the literature on inverse reinforcement learning.  This is doubly confusing, as computing the likelihood function requires the analyst to know how likely a path is given a summary; but this surely depends on the state transition function, which makes the whole exercise seem pretty circular.
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 4
+TITLE: Inference of Strategic Behavior based on Incomplete Observation Data
+AUTHORS: Antti Kangasrääsiö and Samuel Kaski
+
+Overall evaluation: 0 (borderline paper)
+
+----------- Overall evaluation -----------
+The paper studies the following problem of Inverse Reinforcement Learning (IRL) from summary data: given only summary data of an agent’s chosen paths (which are assumed to be the optimal behavior) in a MDP, form a posterior about the latent parameters of the MDP. To solve the problem, they rely on some recent Bayesian inference technique, which they did not go into details (due to space constraint).
+
+From the three-page abstract, this appears to be a pure IRL or Bayesian inference paper, which is a bit detached from the theme of the workshop. I was hoping to see some connection between IRL to problems in “learning in the presence of strategic behavior,” including learning from revealed preferences. At the moment, I am not quite certain this is a good fit for the workshop.
+
+MINOR COMMENTS:
+In section 3, the authors may have jumped to “the third approach” without mentioning what the second approach is.
+
+
+----------------------- REVIEW 4 ---------------------
+PAPER: 4
+TITLE: Inference of Strategic Behavior based on Incomplete Observation Data
+AUTHORS: Antti Kangasrääsiö and Samuel Kaski
+
+Overall evaluation: 1 (weak accept)
+
+----------- Overall evaluation -----------
+The paper discussed how one can still perform inverse reinforcement learning with only partially observing action paths. “Inverse reinforcement learning is a problem where the reward function parameters of a Markov decision process (MDP) are inferred based on state-action observations of an optimally behaving agent.” As the paper points out, standard techniques in this space can solve the inverse reinforcement learning problem when full paths containing both actions and states has been observed. This work focuses on extending this to cases where only parts of these paths are observed.
+
+In terms of relevance to the workshop, I think while inverse reinforcement learning is related to the problem of learning in presence of strategic behavior, in particular, learning parameters of strategic behavior by observing the actions of the agent. But, the particular contributions of this work are more indirectly related to furthering our understanding of learning in presence of strategic behavior, and more so related to details of empirical guarantees that one can get from inverse reinforcement learning when observations are partials. For this reason I think it would be more appropriate to have the paper appear as a poster in the workshop.
+

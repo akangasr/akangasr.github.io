@@ -1,0 +1,143 @@
+------------------------ Submission 143, Review 1 ------------------------
+
+Title: Dealing with Concept Drift in Exploratory Search: An Interactive Bayesian Approach
+
+Reviewer:           External Reviewer
+
+Overall Rating
+
+   2  (Probably reject: I would argue for rejecting this paper.)
+
+Expertise
+
+   3  (Knowledgeable)
+
+The Review
+
+   The paper proposes a probabilistic method for data exploration Even if
+   the paper technically sounds, I think this work is not applicable for
+   poster session as the content is already too developped for poster, and
+   alredy balacing toward a full or short paper. I recommend to develop the
+   paper with an additional related work and results, discussion section and
+   to resubmit as full paper somewhere else.
+
+Please rate the visual appearance of the poster.
+
+   Marginal: visual design would benefit from some additional rework
+
+
+------------------------ Submission 143, Review 2 ------------------------
+
+Title: Dealing with Concept Drift in Exploratory Search: An Interactive Bayesian Approach
+
+Reviewer:           External Reviewer
+
+Overall Rating
+
+   4  (Probably accept: I would argue for accepting this paper.)
+
+Expertise
+
+   3  (Knowledgeable)
+
+The Review
+
+   This paper introduces a user interface that makes use of an interactive
+   Bayesian approach to deal with concept drift in exploratory search. The
+   need for such an interface is motivated by the fact that users change
+   their mind as they perform more search queries, and hence allows users to
+   revise the relevance feedback they gave to past keywords. This system is
+   compared to a baseline system that does not allow to revise relevance
+   feedback. The study finds that the use of the interactive interface to
+   deal with concept drift does help improve the performance of the search.
+
+   The paper is very relevant to IUI's scope, and makes a good contribution
+   to be presented as a poster at the conference.
+
+   The main limitation is the evaluation, which is at the moment a bit
+   preliminary, and would benefit from extending in the future. The user
+   study has been conducted with only 4 students, which is somewhat
+   insufficient so as to conclude that the user interface is really useful.
+   I am left wondering if an average user would be keen on using these extra
+   features during exploratory search, or they would instead find it either
+   difficult or cumbersome to use. A broader user study with more
+   participants would help here.
+
+   The study finds that users perform more interactions with the improved
+   interface, leading to better results. It would also be useful to include
+   figures of time spent with each interface, instead of only number of
+   interactions, so that the extent to which spending that extra time can be
+   assessed.
+
+   Regarding the user interface, I find that the fact that the feedback is
+   represented with a bar of both different length and color might be a bit
+   redundant. I understand that the length and the color are providing the
+   same information after all. Would it be perhaps easier for the user to
+   use a single clue to represent different feedback values?
+
+   I understand that it is due to the limitation of length of the paper, but
+   I believe that it would be very useful to include a screenshot of the
+   whole interface in the paper, as it has been included in the poster. The
+   reader does not otherwise see the entire interface in the paper.
+
+   Minor comment: In the introduction, you might want to revise the sentence
+   "in this system makes the assumption that ... with the assumption that
+   ..." to avoid redundancy and improve clarity.
+
+Please rate the visual appearance of the poster.
+
+   Satisfactory: visual design acceptable for presentation at conference
+
+
+------------------------ Submission 143, Review 3 ------------------------
+
+Title: Dealing with Concept Drift in Exploratory Search: An Interactive Bayesian Approach
+
+Reviewer:           External Reviewer
+
+Overall Rating
+
+   3  (Borderline: Overall I would not argue for accepting this paper.)
+
+Expertise
+
+   2  (Passing Knowledge)
+
+The Review
+
+   This paper presents an interactive Bayesian approach that reflect user's
+   concept drift to suggest better search query for precise search result.
+
+   I have no expertise in modeling, but the paper is anyhow not much easy to
+   follow the flow. The user interface demonstrated through the supporting
+   file looked accessible and intuitive to utilize, but I still have doubt
+   if suggested search terms from agents shown in the target circles really
+   helped users to search precise paper lists or not. I was curious the
+   paper list shown by new queries is subset of first result or newly found
+   list. In my personal experience, sometimes papers found by revised search
+   terms are not in the overlapped category where I firstly searched, or a
+   newly adjusted search term brings new papers from the scratch. I
+   personally wonder if these cases were properly reflected.
+
+   Also, in the demo video, circular interface seemed to be a main feature
+   of the system, than timeline interface authors introduced in the paper.
+   And I was not well convinced how timeline matters in this user interface.
+   If users learn while they searching, and this helps them to find better
+   papers, do users often times go back to the some point? Does going back
+   to some moment yield better search results?
+
+   The number of users who participated in study to validate the system
+   seems not to be enough, also their qualitative responses can be possibly
+   biased because of their demographics. Considering the session the paper
+   submitted to, WiP poster, it can be improved for the future, but I do not
+   assert strong acceptance or rejection of this paper at this moment. I
+   will rely on other reviewers' scores.
+
+   In minor, the template required for WiP poster is extended abstract
+   format, not this proceedings template with two columns. If the paper is
+   accepted, authors should reduce much amount of writing to squeeze
+   contents into.
+
+Please rate the visual appearance of the poster.
+
+   Marginal: visual design would benefit from some additional rework 

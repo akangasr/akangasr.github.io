@@ -1,0 +1,205 @@
+------------------------ Submission 172, Review 4 ------------------------
+
+Title: Improving controllability and predictability of interactive recommendation interfaces for exploratory search
+
+Reviewer:           primary
+
+Overall Rating
+
+   4  (Probably accept: I would argue for accepting this paper.)
+
+Expertise
+
+   3  (Knowledgeable)
+
+The Review
+
+   This is a good example of a short IUI paper on a very relevant topic: the
+   effect of user actions in an interactive interface for exploratory
+   search. According to the reviewers, the user study could be further
+   improved, but the ideas and solution seem interesting and appropriate.
+   Hence my recommendation.
+
+Is this paper a candidate for a downgrade from full to short paper?
+
+  
+
+How should this work be presented at the conference, if accepted?
+
+   Work should be presented as a poster
+
+
+------------------------ Submission 172, Review 1 ------------------------
+
+Title: Improving controllability and predictability of interactive recommendation interfaces for exploratory search
+
+Reviewer:           Regular PC member
+
+Overall Rating
+
+   4  (Probably accept: I would argue for accepting this paper.)
+
+Expertise
+
+   4  (Expert)
+
+The Review
+
+   This paper targets the important problem of improving predictability and
+   controllability of interactive recommendation interfaces. The proposed
+   solution estimates the effects of user actions and previews the adaptive
+   results as the user is interacting in real time. This enables users to
+   have a better sense of what will happen as a result of their actions (and
+   can allow them to make more informed judgments about what actions to
+   take). The authors also present a preliminary study examining information
+   retrieval tasks with the predictable system vs the standard system
+   showing some task and subjective improvements but these were not
+   significant. Participants preferred the predictable system over the
+   standard one.
+
+   I think this paper targets an important and open problem of improving
+   predictability and controllability in recommendation interfaces. Most
+   work in this area has focused on accuracy and preference of
+   recommendations rather than these other interaction centric measures. I
+   also think the authors propose an appropriate solution of approximating
+   the results of user actions (given that it may be infeasible to update
+   the underlying model in real time).
+
+   I am, however, somewhat disappointed in the study and results presented.
+   I think this is doing an injustice to an interesting idea. However, given
+   that short papers in IUI can represent works-in-progress I’m giving
+   this paper a high score because I think it has great potential. Here are
+   some suggestions for future work:
+
+   • I’m not sure the task being studied is appropriate for evaluating
+   predictability. If the goal of the information retrieval tasks were to
+   examine the system in the context of an actual task of using an adaptive
+   interface, then the authors should at least report on peoples’
+   behaviors with the predictable interface. For example, did the
+   predictable interface have an impact on speed? I imagine people would
+   move keywords somewhat slower with the predictable interface in order to
+   assess the effects of their actions. Also, how often did people cancel or
+   change their intended actions as a result of seeing the previews? Also,
+   how did people react to the discrepancy between the previewed results and
+   the actual updates to the system?
+   • Another interesting aspect to investigate is how the approximated
+   predictions vary from the actual predictions that would have been taken
+   if the system could update in real time. This could be measured offline.
+
+   Overall, I like this idea and I think the paper has promise. In the
+   future, I would like to see more information about the impact and user
+   perceptions of the predictable system itself.
+
+
+------------------------ Submission 172, Review 2 ------------------------
+
+Title: Improving controllability and predictability of interactive recommendation interfaces for exploratory search
+
+Reviewer:           Regular PC member
+
+Overall Rating
+
+   3  (Borderline: Overall I would not argue for accepting this paper.)
+
+Expertise
+
+   4  (Expert)
+
+The Review
+
+   Authors of this paper has taken an interesting approach to solve the
+   problem in exploratory search. First authors have actually transform the
+   problem as a recommendation problem though they have not clearly
+   identified it as a recommendation problem the predicting route that they
+   have taken lead them to treat this search problem as a recommendation
+   problem.
+
+   Authors have identified two main problems in the existing exploratory
+   search. One is user is been treated as a passive source instead of active
+   source and secondly complexity of information space. Interestingly
+   authors have treated this as an optimization problem which an interesting
+   approach in interface design.
+
+   The algorithm was clearly explain the optimization approach but what was
+   not clear is how it can perform in large scale environment. System put
+   together by authors been tested by 12 students. I understand they test
+   both baseline system and improved system separate but the problem in such
+   implementation is when user get exposed to one system you are no longer
+   able to discuss the independence of the participants. Correct way to run
+   such experiment is to randomly split user population in to control group
+   and experimental group and study the effect. Measurements would have been
+   time to complete the task and later let the user fill out a survey. Also
+   using the logs you can measure difficulty of tasks. 
+
+
+------------------------ Submission 172, Review 3 ------------------------
+
+Title: Improving controllability and predictability of interactive recommendation interfaces for exploratory search
+
+Reviewer:           Regular PC member
+
+Overall Rating
+
+   4  (Probably accept: I would argue for accepting this paper.)
+
+Expertise
+
+   3  (Knowledgeable)
+
+The Review
+
+   I have found the submission well written and easy to follow throughout.
+   The authors have addressed the problem they are trying to tackle well at
+   the beginning and supported it through previous relevant work. Their
+   approach is well presented and justified and the evaluation method
+   suggested in satisfactory for a short paper/poster.
+
+   My only concern is that I am sure I have seen something similar but I
+   could not find the publication and I am sure is not cited in the paper.
+   So, I was wandering how novel this approach is.
+
+   Apart from the above comment I believe is a well presented paper.
+
+
+------------------------ Submission 172, Review 5 ------------------------
+
+Title: Improving controllability and predictability of interactive recommendation interfaces for exploratory search
+
+Reviewer:           Regular PC member
+
+Overall Rating
+
+   2  (Probably reject: I would argue for rejecting this paper.)
+
+Expertise
+
+   2  (Passing Knowledge)
+
+The Review
+
+   The authors present an interface for improved controllability in
+   interactive recommendation and exploratory search. The work uses SciNet
+   as a case study and applies a user modeling algorithm to improve the user
+   experience. The system is interactive and responds to the user's actions
+   directly.
+
+   Generally, I like the idea shown in this work, although this work might
+   not be very novel, it is timely and focuses on issues that are broadly
+   found in information systems.
+
+   Although I enjoy the work, I believe the authors share my concerns
+   regarding the validity of their results. Namely, the majority of the
+   results are not statistically significant - in the context of their
+   evaluation (12 users), I am concerned that the results are simply a
+   result of subjective biases among the study participants. Additionally,
+   out of the 12 users, 2 were deemed to be outliers and not used in the
+   evaluation process. This leaves a total set of 10 subjects in the study.
+
+
+   My recommendation to the authors is to perform a larger study in order to
+   get better data to do their analysis on.
+
+   Granted, the results that were not statistically significant (performance
+   of their system vs. baseline) might not be affected by the size of the
+   group of subjects, but it will indicate whether their approach actually
+   is able to improve the experience of the system.

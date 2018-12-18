@@ -1,0 +1,398 @@
+------------------------ Final reviews ------------------------
+
+CHI 2017 Papers and Notes
+
+Reviews of submission #1587: "Inverse Modeling of Complex Interactive
+Behavior with ABC"
+
+------------------------ Submission 1587, Review 4 ------------------------
+
+Reviewer:           primary (1AC)
+Overall rating:     4  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   4  (Expert )
+
+Recommendation
+
+   Possibly Accept: I would argue for accepting this paper; 4.0
+
+Award Nomination
+
+   
+
+Your Assessment of this Paper's Contribution to HCI
+
+   The paper investigates the value of apply the techniques of approximate
+   Bayesian computations (ABC) to identify parameters in cognitive models.
+   Using the menu selection task an example, the authors showed how ABC can
+   help to set certain parameters of interests in a cognitive model, and
+   help to generate hypotheses based on a space of possible strategies.
+   Finally, the technique can also be applied to identify parameters that
+   are mostly likely responsible for individual differences in performance.
+
+The Review
+
+   This is an interesting paper with some interesting results that provide
+   good insights into better methods for cognitive/user modeling. The
+   example models did seem to illustrate most the main ideas behind the
+   paper. These suggest that this should be a strong paper to be accepted to
+   CHI. However, the main problem is that the paper is poorly written, such
+   that the main ideas do not stand out very well. This is perhaps the
+   reasons why 3 out of the 4 reviewers do not see the value of the paper.
+
+   The introduction was very poorly written, as it did not motivate the
+   reader why this paper was written. It uses a long list of jargons (and
+   not used quite correctly) without carefully explaining them, and why they
+   are useful to motivate the paper. Some of the claims are even
+   questionable (e.g., “HCI models has engaged in forward
+   modeling”—without citation it’s not clear what it really means, but
+   it does not seem correct). The background section reviewed concepts that
+   do not seem to be the most relevant (such as “computational
+   rationality” – nothing wrong with this term, but it is not clear the
+   goal of the ABC is at this level – again a burden of proof for this
+   paper), which not only creates distraction and lowers its readability,
+   but also introduce unnecessary burden of proof. Not only until it gets to
+   the “Experiments and results” the paper starts to become more
+   coherent – but by this time most readers are completely lost.
+
+   It seems to me that the paper can be a lot clearer by rewriting the intro
+   and make the story simpler, and removing some of the unnecessary jargons.
+   I would ask that the senior authors step in and help with this task. The
+   idea (if I understand it correctly) is that in cognitive modeling,
+   finding the right parameters is often difficult (please explain how this
+   is similar to the task of computing the likelihood function in Bayesian
+   models). Thus, ABC is likely a good candidate for more systematically
+   sample from the prior distributions of the model parameters, and
+   investigate their impact on the generated user data. In traditional
+   cognitive modeling, parameter values are often based on past models or
+   existing literature, so the question that this paper focuses on is
+   whether ABC can be useful for this purpose. The authors should also give
+   some background on the class of methods related to ABC, such as empirical
+   Bayeisan models. It should also review some general methods on model
+   selections, parameter estimation, etc (e.g. Jay Myung’s work).
+
+   The authors can then go on to illustrate how and why the menu selection
+   task is a good candidate to demonstrate the usefulness of ABC for this
+   task, and explain the results more clearly in the context of how it can
+   be better than traditional methods of searching for the best-fitting
+   parameter values. Explain the menu selection task earlier, then explain
+   the parameter space and model selection. Introduce the idea of a forward
+   and inverse model in the process of parameter estimation, contrast it
+   with traditional way of doing this. Explain figure 5 & 6 more carefully.
+   Motivate the 3 studies that you did before you introduce them, then
+   discuss the significance of them. In each study, interpret the results
+   and contrast them with the “traditional” ways. At the end, summarize
+   these findings and compare them to the original studies to highlight what
+   extra benefits you can get from using ABC. Then state review a few other
+   existing models of HCI (other than menu selection), and explain how it
+   can be applied. Discuss limitations on model selection, strategies
+   estimations, etc in the technique, and how it can be mitigated by
+   consulting HCI theories and (cognitive models). It is not clear to me how
+   it can address “strategic flexibility of the human cognitive system”
+   – sounds overly broad. Please be more focus and careful in the claims
+   about contribution.
+
+1AC: The Meta-Review
+
+   All reviewers found that the idea of inverse modeling is interesting and
+   potentially useful for the CHI community. All reviewers did however point
+   out some weaknesses. R1 pointed that the idea of inverse modeling was not
+   developed fully, undermining the appreciation of its importance. R2 was
+   the most positive and found the paper well written. R2 pointed out that
+   computational times could be potentially important but was not discussed.
+   R3 expressed the same concern that the relative potential of inverse
+   modeling was unclear, especially compared to other existing methods; and
+   to what extend the method can be applied in different situations. I hope
+   the authors will find these reviews useful for their future submission.
+
+Rebuttal response
+
+   The rebuttal was well written, and have provided a good plan to address
+   the weaknesses pointed out by the reviewers. I am quite happy to raise my
+   rating on this.
+
+
+------------------------ Submission 1587, Review 5 ------------------------
+
+Reviewer:           secondary (2AC)
+Overall rating:     2.5  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   2  (Passing Knowledge)
+
+Recommendation
+
+    . . . Between possibly reject and neutral; 2.5
+
+Award Nomination
+
+   
+
+Your Assessment of this Paper's Contribution to HCI
+
+   The opening sentences of the abstract sound promising.
+
+   "Can one make deep inferences about a user based only on observations of
+   how she interacts? This paper contributes a methodology for inverse
+   modeling in HCI, where the goal is to estimate a cognitive model from
+   limited behavioral data."
+
+   But there is very little in the way of discussion of the cognitive model
+   that is being provided and rather than predicting things like fixation
+   times and task completion times I would like to see predictions of
+   internal cognitive variables and validation of those predictions. if we
+   don't have that, then I don't see the point of inverse modelling, given
+   the stated goals.
+
+
+The Review
+
+   I generally agree with the issues raised by the other reviewers.
+
+1AC: The Meta-Review
+
+
+Rebuttal response
+
+   There were two fairly strongly positive reviews (4) on this paper and two
+   mildly negative (2.5) reviews including my own. We had a discussion after
+   reviewing the rebuttal and one of the positive reviewers reconfirmed his
+   support for the paper. Since there is a divergence of option I recommend
+   discussion for this paper.
+
+
+------------------------ Submission 1587, Review 1 ------------------------
+
+Reviewer:           external
+Overall rating:     2.5  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   2  (Passing Knowledge)
+
+Recommendation
+
+    . . . Between possibly reject and neutral; 2.5
+
+Award Nomination
+
+   If accepted, this paper would not be among the top 20% of papers presented at CHI
+
+Your Assessment of this Paper's Contribution to HCI
+
+   The authors contributed by elaborating on inverse modeling and how this
+   can help the CHI community. Further the authors are presenting one case
+   where inverse modeling was used to improve the models fitness in contrast
+   to forward modeling.
+
+The Review
+
+   Over all the paper is well written and structured. The overall core idea
+   is of interest for the CHI community. However I would like to help to
+   improve the paper with the following remarks. The authors used a method
+   already used in other files and promote it to be also useful for the CHI
+   community. A general introduction of how inverse modeling is used is well
+   presented in the beginning of the paper. The authors the elaborate on how
+   this can be used ABC and CR for a menu selection task. Here I would have
+   liked to see the authors elaborate more on the task instead of referring
+   to outer papers. The description of how the study is run and stats of the
+   participants are unusual short for a CHI paper -gander split, age as well
+   as how long the study lasted was not laid out. Further what participants
+   was paid is normally stated.
+
+   To sum up I would say the paper will help the CHI community to understand
+   inverse modeling better however the paper claims more then it presents
+   since it was already done in different fields. Especially the paper title
+   itself claims to be generic what the paper not is.
+
+   I additionally add this comment which would improve the papers
+   style/correctness but had no influence on my review rating:
+
+   # the new CHI template includes DOI's in the references
+
+   # make sure that the references are following one style e.g. conference
+   names long or short
+
+   # put page numbers to your submit
+
+   # you canst use a references as a noun. e.g "see [34] for ..." (page 2)
+   or "as [7]:" (page 5)
+
+   # whenever you cite a paper put the \cite{}  = [X] (e.g. its missing on
+   page 5 "...Chen et al. was..."
+
+Rebuttal response
+
+   I would like to thank the authors for their rebuttal. I read the rebuttal
+   and updated my score accordingly.
+
+
+------------------------ Submission 1587, Review 2 ------------------------
+
+Reviewer:           external
+Overall rating:     4  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   2  (Passing Knowledge)
+
+Recommendation
+
+   Possibly Accept: I would argue for accepting this paper; 4.0
+
+Award Nomination
+
+   If accepted, this paper would not be among the top 20% of papers presented at CHI
+
+Your Assessment of this Paper's Contribution to HCI
+
+   The paper studies the use of approximate Bayesian computation models to
+   capture interactive use behavior with menu items. The main comparison of
+   the paper is the study in [13], that exploits the more common Q-Learning
+   approach for the same task. Extensions of [13] are present and detailed
+   experiments are performed. Results show improvements in using ABC.
+
+The Review
+
+   Initially, I congratulate the authors in presenting their ideas clearly.
+   The paper is very easy to read and results are promising. Being
+   unfamiliar with ABC, it was interesting to learn about this inference
+   technique.
+
+   Although promising, throughout the paper I missed a discussion regarding
+   computation times. How does ABC compare with Q-learning in this case.
+   More importantly, it would be nice to have the baseline [13] in the
+   prediction sections (Study 2 and 3). Comparisons on these sections is
+   mostly done with variants of the authors idea. Adding such comparisons as
+   well as computation time would help understanding the practical gains of
+   the authors ideas.
+
+   Structure wise, I would suggested moving the appendixes after the
+   references.
+
+   Overall, this was a nice paper to read and I believe it can be a good
+   contribution to the conference. Nevertheless, the core experiments that
+   argue in favor of this novel technique need to the revised. Currently,
+   experiments are mostly based on variations of the same model, not on
+   comparisons with previous efforts.
+
+Rebuttal response
+
+   I still think this paper could be a nice contribution to CHI, it explores
+   a new method with nice results. Based on the rebuttal, I'll welcome the
+   updated text and will increase my score. I still believe that further
+   comparisons with other methods, even if just explaining on the text why
+   they do not make sense, could help the uninformed reader.
+
+
+------------------------ Submission 1587, Review 3 ------------------------
+
+Reviewer:           external
+Overall rating:     3  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   2  (Passing Knowledge)
+
+Recommendation
+
+   Neutral: I am unable to argue for accepting or rejecting this paper; 3.0
+
+Award Nomination
+
+   
+
+Your Assessment of this Paper's Contribution to HCI
+
+   This paper describes a case study of applying inverse modelling using
+   approximate Bayesian computation (ABC) to a set of existing, previously
+   analyzed dataset of menu interaction (e.g., task completion times).
+   According to the authors, this combination of approach has not been
+   applied in the field of HCI, but has been shown useful in fields
+   including cognitive science.
+
+   In their case study, the authors attempted to compare their inverse
+   modelling results to a previous research applying forward models to the
+   same set of data, and provided variants of their inverse models by
+   introducing a number of hypotheses (treated as prior knowledge)
+   translated into new parameters.
+
+The Review
+
+   The ability to infer parameters or causal factors from a set of
+   observations is particularly useful in fields where these parameters
+   cannot be observed. For HCI, it would also be useful to estimate
+   cognitive models based on purely behavioral data. In this paper, the
+   authors provided a case study in which they attempted to estimate
+   parameters modelling times spent on menu interactions using approximate
+   Bayesian computation. However, while the case study shows that the method
+   can be done in this context, it is unclear to me that inverse modelling
+   using ABC has significant advantages compared to forward modelling or
+   other methods of inverse modelling.
+
+   For comparison with forward models, the authors compared their results
+   with an earlier work (Chen et al., cited as [13] in the paper), which
+   apparently set a number of parameters (e.g., meaningful fixations) based
+   on literature. The authors' analysis, for simplicity's sake, applied
+   their method to infer one parameter, fixation time, from observations of
+   task completion times. The current results appear promising based on
+   closer values of simulated task completion times to observed task
+   completion times. However, in the other aspect for finding behavioural
+   patterns, there were no conclusive results that appear to match observed
+   data or to provide plausible behavioural strategies. Given the comparison
+   the authors tried to raise with another work, more details should be
+   provided regarding how the forward modelling was done in the other work
+   (what parameters are being estimated, based on what reasoning, etc.)
+
+   To show case that the inverse modelling using ABC may be promising in
+   providing further insights about human computer interactions, the authors
+   proposed to use it as a way for "hypothesis testing", i.e., given their
+   observation about the data/scenario, they included new parameters (e.g.,
+   latency associated with target selection, probability associated with
+   recognising a previously seen item) to be inferred from data. Results of
+   incrementally adding inferred parameters to the model were used to
+   suggest success in testing such hypotheses given improved predictions.
+   This seems rather doubtful, as increasing the number of parameters,
+   especially when they are already estimated from the given dataset, would
+   logically improve predictions, but would not necessarily suggest that it
+   was a valid parameter to include. There were no formal
+   comparison/assessment of model results beyond predictive errors. I am
+   uncertain whether this is a limitation for the method applied, or missing
+   information that could be expanded on.
+
+   Given that these "hypotheses" came from the authors'interpretation by
+   looking at the previously simulated data and the actual data, I find that
+   hypotheses tested and supported in formal models would provide more
+   concrete evidence (hypothesis testing required controls of many factors,
+   for example). Also, such hypotheses were treated as the "prior" of ABC.
+   Can you make assumptions of general knowledge and then interpret their
+   estimates as validation of such knowledge being correctly assumed?    
+
+   The validity of using an individual's data to estimate a model of an
+   individual and then comparing this model's predictive errors with that of
+   the population model based on population data is unclear to me. Unless
+   the statistical model has accounted for variability of individuals, a
+   model based on an individual would logically do a better job predicting
+   an individual's behaviour compared to using a population model, no?
+
+   Overall, I find the paper unnecessarily lengthy, especially in the first
+   part for introducing inverse models/ABCs as a promising method in HCI.
+   Yet it was not clear to me what are the limitations or potential weakness
+   for such methods compared to the more traditional ones. While this may be
+   a useful method for HCI data, it would be important for other researchers
+   to understand the necessary conditions that this method may be useful
+   for.
+
+   On the other hand, there could be more details provided in justifying
+   some of the study's own choices (e.g., what does it mean that a subject
+   is the "most average" user compared to others?  That their data represent
+   the median, or average, or these values?).
+
+Rebuttal response
+
+   I thank the authors for their rebuttal, I have adjusted the score to 3
+   based on the authors' proposed changes, but many of my concerns remain.
+

@@ -1,0 +1,22 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 12
+TITLE: ELFI: Engine for Likelihood-Free Inference
+AUTHORS: Antti Kangasrääsiö, Jarno Lintusaari, Kusti Skytén, Henri Vuollekoski, Michael Gutmann, Aki Vehtari, Jukka Corander and Samuel Kaski
+
+OVERALL EVALUATION: -2
+
+----------- OVERALL EVALUATION -----------
+This paper proposes a software package for doing inference on generative simulator models in python.
+
+As such, the submission only contains a short announcement of the proposed package, without any concrete comparison to other probabilistic programming alternatives. The main reasons for using this software according to Section 1 and 2 are that python language is attractive to data scientists, and the software's user interface/modularity/parallelization capabilities. Besides lack of any detail surrounding these claims, these reasons by themselves may be insufficient as a justification for acceptance especially without either concrete comparisons to existing software or an actual link to the software itself. The authors should do a more careful evaluation and provide more details on the proposed package before it can be seriously reviewed.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 12
+TITLE: ELFI: Engine for Likelihood-Free Inference
+AUTHORS: Antti Kangasrääsiö, Jarno Lintusaari, Kusti Skytén, Henri Vuollekoski, Michael Gutmann, Aki Vehtari, Jukka Corander and Samuel Kaski
+
+OVERALL EVALUATION: 1
+
+----------- OVERALL EVALUATION -----------
+The paper very briefly describes a software package for likelihood free inference from a generative model directly. While such a package is surely of use, I would have preferred more description of the methodology and an expanded example to make it self complete. The authors had ample space to add more details.

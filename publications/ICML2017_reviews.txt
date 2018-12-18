@@ -1,0 +1,25 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 1
+TITLE: Modelling Human Decision-making based on Aggregate Observation Data
+AUTHORS: Antti Kangasrääsiö and Samuel Kaski
+
+Overall evaluation: 2 (accept)
+Interestingness: 4 (good)
+Relevance: 4 (good)
+
+----------- Overall evaluation -----------
+This paper is based on the premise that human-in-the-loop approaches will benefit from the ability to model the goals, preferences and limitations of the human. Reinforcement learning is a promising approach, and the authors show how to perform inference in the cases when the state of the environment and the action of the agent cannot be observed at each step of the task. This could spark a new line of human-in-the-loop research.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 1
+TITLE: Modelling Human Decision-making based on Aggregate Observation Data
+AUTHORS: Antti Kangasrääsiö and Samuel Kaski
+
+Overall evaluation: 1 (weak accept)
+Interestingness: 4 (good)
+Relevance: 3 (fair)
+
+----------- Overall evaluation -----------
+This paper poses the problem of inverse reinforcement learning from summary data (IRL-SD problem). As obtaining fine-grained data is usually not feasible to apply the standard IRL techniques, this problem setup is of practical importance and also relevant to the ICML community. This setup is also interesting for designing privacy-aware human-in-the-loop systems and could lead to some interesting discussions in the workshop.
+

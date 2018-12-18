@@ -1,0 +1,64 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 36
+TITLE: Interactive Modelling of Concept Drift and Errors in Relevance Feedback
+AUTHORS: Antti Kangasrääsiö, Yi Chen, Dorota Glowacka and Samuel Kaski
+
+OVERALL EVALUATION: 0 (borderline paper)
+
+----------- Review -----------
+This paper proposed a user model and a timeline interface that visualizes the feedback history for the user and suggests adjustments for users' past feedback. I believe the authors have achieved interesting results. The following comments may help to improve the paper.
+
+There has to be an indicative and clear motivation in the introduction. e.g.  in the introduction of paper, a real-world example about "why we need such a system" may help readers to follow the paper. Some motivation like "The motivation for the design of the timeline was to provide the user with a quick overview of the feedback that she has given in the current search session." should be placed in the introduction section and better structured.
+
+About the evaluation, since there is no concrete usage scenario or a designed task, the incentives may have a negative effect in the experiment. For example, because of lacking concrete scenario, some user may simply favor the positive direction of the questionnaire and go for incentive.
+
+Instead of doing the questionnaire and interviews, the authors may add an application demo of the proposed interface in some domain, to demonstrate that this interface is effective. This is also to show how other domains can possibly use the proposed user model and interface. This might be even better than using SUS.
+
+Minor changes: shorten the caption of the figures. The detailed discussion and description should be moved to the main text.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 36
+TITLE: Interactive Modelling of Concept Drift and Errors in Relevance Feedback
+AUTHORS: Antti Kangasrääsiö, Yi Chen, Dorota Glowacka and Samuel Kaski
+
+OVERALL EVALUATION: 1 (weak accept)
+
+----------- Review -----------
+In this submission, the authors address the problem that in IR systems the actual information need always remains unknown to the system and that it can only be guess from the queries entered. In longer search sessions, as a consequence queries can change and the information need can change as well depending on the information perceived in previously retrieved search result pages.
+
+The authors claim that these possible changes - called concept drift - can be captured by an IR system that for each new search iteration suggests new keywords and asks the user to rate the relevance of documents retrieved on the basis of the current keyword list. The relevance probability of each document in each step is modelled as a Bayesian regression model - in this section an intuitive explanation of how and why with this model concept drift can be captured would improve the paper.
+
+The concept drift is visualized to the user by presenting a timeline of keywords and a radar visualization of their predicted relevance on the basis of the user's feedback.
+
+These both questions are quite different in nature but of course related as they only together build the IR system. Therefore, the evaluation addresses both questions (retrieval performance and user interface) separately.
+
+In the performance evaluation, it remains unclear how the oracle knows which feedback is relevant.
+
+The interface evaluation addresses several subissue and may be a bit confusing the reader. Focussing on central issues would probably improve the paper. On the other hand, the discussion of the user study does not answer the question whether the presented system actually supports users when a concept drift occurs. I have the feeling that the experiment is not designed in order to answer this question directly. Therefore, the authors should discuss why SUS and ResQue (that actually measure user satisfaction) and valid tools to measure the system's performance to support search with concept drifts. The same holds for the log data analysis. As the evaluation is presented now it opens a new issue on the usability of the system and does hardly evaluate the working hypothesis of the paper.
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 36
+TITLE: Interactive Modelling of Concept Drift and Errors in Relevance Feedback
+AUTHORS: Antti Kangasrääsiö, Yi Chen, Dorota Glowacka and Samuel Kaski
+
+OVERALL EVALUATION: 1 (weak accept)
+
+----------- Review -----------
+Introduction:
+In this paper, the authors propose a model of concept drift and errors in relevance feedback. The user model in existing systems makes the assumptions; all the user feedback is equally accurate, the user makes no mistakes in giving feedback, and no learning or changes in the user’s search interests would occur as the search progresses. Because the authors think that these assumptions seem too ideal, they propose the more robust model adapting concept drift and errors.
+First, they apply Bayesian regression model for predicting the accuracy of individual user feedback and also extracting outliers.
+They provide a timeline interface that allows the user to see his/her recent feedback history. The timeline helps the user to reflect on their earlier feedback and evaluate the feedback given so far. Also the user can adjust the relevance value of a feedback by clicking in the timeline.
+
+Merits:
+Experimental results and discussion is well described in detail. User study seems fair and credible.
+
+Critique:
+
+
+-------------------------  METAREVIEW  ------------------------
+PAPER: 36
+TITLE: Interactive Modelling of Concept Drift and Errors in Relevance Feedback
+
+Reviews categorize this as a borderline paper.
