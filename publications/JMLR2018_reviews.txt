@@ -1,0 +1,76 @@
+Reviewer 1 ############################################
+
+
+I'm Reviewer 1 of the previous submitted version.
+
+I recommend the paper for acceptance. The revised submission clarifies
+all my concerns, and the authors' reply was cogent and detailed. I
+look forward to seeing how ELFI furthers in development.
+
+P.S. Thank you for submitting the PDF with the diff.
+
+
+Reviewer 2 ############################################
+
+
+This paper gives an overview of ELFI, an open-source software package 
+for inference in likelihood-free models. This is an important class of 
+problems with broad applications. The revisions and responses to earlier 
+reviews are thorough and convincing. I recommend this paper be accepted 
+after minor revisions.
+
+I have a few small changes I would like to see reflected in the 
+manuscript. They fall into three categories:
+
+1. Technical issues
+
+- The paper states that it supports “pseudo random number handling” in 
+section 2.2. However, it is not clear what this means. Is each ELFI node 
+required to provide a mechanism for setting a PRNG seed or state? Is 
+each ELFI node required to be deterministic given this seed or state? If 
+not, what support does ELFI provide?
+
+- In both the body of the paper and the abstract, the paper asserts that 
+BOLFI can provide several orders-of-magnitude acceleration, and that 
+support for BOLFI is a distinctive feature of ELFI. A couple sentences 
+should be provided to give readers unfamiliar with BOLFI a sense of what 
+it is, and why it could be expected to deliver speed improvements. Also, 
+it is critical to have one sentence explaining an example where BOLFI 
+would *not* provide speedup, to help a reader make an informed judgment.
+
+- The paper states that ELFI makes it easy to incorporate simulators in 
+other languages. It would be
+
+- For ELFI graphs that have one likelihood-free node whose output is the 
+input to another likelihood-free node, what algorithm(s) does ELFI support?
+
+- The paper asserts that an important benefit of ELFI is its support for 
+“iterative advancing of the inference”. It’s not clear what that means. 
+I’m imagining this means that users can control the advancement of an 
+underlying Markov chain or other iterative inference algorithm. It’s 
+important to be specific here, since this is claimed to be a key 
+contribution. Also, it’s important to note that this is also supported 
+by Venture (although no doubt Venture’s support for distributed 
+execution is less advanced than ELFI’s).
+
+- It is not clear what exactly “Separate modeling” means, in Table 1. 
+This should be clarified with a couple sentences of explanation.
+
+2. Related work
+
+- The paper should mention the Venture probabilistic programming 
+language as another piece of closely related work. See Mansinghka, 
+Selsam, and Perov (2014; https://arxiv.org/abs/1404.0099) for 
+information on Venture’s internals, including the stochastic 
+regeneration algorithm it uses for cascading likelihood-free nodes. (On 
+graphs with likelihood-free nodes whose outputs are the inputs to other 
+likelihood-free nodes, this algorithm boils down to the cascading 
+resimulation algorithm from Cusumano-Towner et al. 
+https://arxiv.org/abs/1704.04977.)
+
+For reference, also see three papers on applications that use 
+likelihood-free inference in Venture:
+
+Mansinghka et al. (https://dspace.mit.edu/handle/1721.1/93171)
+Cusumano-Towner et al. (https://arxiv.org/abs/1704.04977)
+Saeedi et al. (https://arxiv.org/format/1506.00308)
