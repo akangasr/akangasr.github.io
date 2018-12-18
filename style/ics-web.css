@@ -80,16 +80,8 @@ a:hover {
 	height: 123px;
 }
 
-.header-logoarea-generic {
-	background: url('../img/banner-generic.jpg') no-repeat 0 0;
-}
-
-.header-logoarea-group {
-	background: url('../img/banner-group.jpg') no-repeat 0 0; 
-}
-
 .header-logoarea-personal {
-	background: url('../img/banner-personal.jpg') no-repeat 0 0;
+	background: url('banner-personal.jpg') no-repeat 0 0;
 }
 
 .header-logo {
